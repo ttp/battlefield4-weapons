@@ -1,0 +1,11 @@
+{
+    "name": "battlefield4-weapons",
+    "version" : "0.1.0",
+    "dependencies": {
+        "request": "*",
+        "mongodb": "*",
+        "async": "*",
+        "cli-table": "*",
+        "underscore": "*"
+    }
+}

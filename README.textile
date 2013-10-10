@@ -1,0 +1,240 @@
+h1. Battlefield4 weapons statistic
+
+Allows you to choose best weapon according to real game statistic.
+
+h3. Usage
+
+Requires node.js & mongodb to start.
+
+1. Login to battlelog & update @load_stat.js@ with your *beaker.session.id* from cookies:
+
+_load_stat.js_
+@var SESSION_ID = 'change-me';@
+
+2. Load weapon statistics from servers:
+
+@node load_stat.js@
+
+Press @Ctrl+C@ at the end of process to break db connection.
+
+You can run it several times to load more data.
+
+3. Print results:
+
+@node print_results.js@
+
+You can update _MIN_TIME_EQUIPPED_ value(in sec). By default it uses weapons that were used at least 60min.
+
+_print_results.js_
+@var MIN_TIME_EQUIPPED = 60 * 60;@
+
+h2. Example Statistic(real)
+
+* _KPM_ - kills per minute
+* _Count_ - number of records that were used to calculate average value
+
+h3. Special
+
+**by accuracy**
+
+| *Name*        | *Accuracy* | *KPM* | *Count* |
+| defibrillator | 0.280      | 0.852 | 1       |
+| bayonet       | 0.162      | 0.268 | 1       |
+| survival      | 0.162      | 0.268 | 1       |
+
+**by kpm**
+
+| *Name*        | *Accuracy* | *KPM* | *Count* |
+| defibrillator | 0.280      | 0.852 | 1       |
+| bayonet       | 0.162      | 0.268 | 1       |
+| survival      | 0.162      | 0.268 | 1       |
+
+
+
+h3. Rocket Launchers
+
+**by accuracy**
+
+| *Name*         | *Accuracy* | *KPM* | *Count* |
+| rpg-7v2        | 0.372      | 0.766 | 376     |
+| fim-92-stinger | 0.092      | 0.112 | 15      |
+
+**by kpm**
+
+| *Name*         | *Accuracy* | *KPM* | *Count* |
+| rpg-7v2        | 0.372      | 0.766 | 376     |
+| fim-92-stinger | 0.092      | 0.112 | 15      |
+
+
+
+h3. Shotguns
+
+**by accuracy**
+
+| *Name*   | *Accuracy* | *KPM* | *Count* |
+| m26-mass | 0.847      | 1.494 | 7       |
+| 870-mcs  | 0.686      | 1.336 | 51      |
+| qbs-09   | 0.668      | 1.070 | 100     |
+
+**by kpm**
+
+| *Name*   | *Accuracy* | *KPM* | *Count* |
+| m26-mass | 0.847      | 1.494 | 7       |
+| 870-mcs  | 0.686      | 1.336 | 51      |
+| qbs-09   | 0.668      | 1.070 | 100     |
+
+
+
+h3. DMRs
+
+**by accuracy**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| mk11-mod-0 | 0.207      | 0.784 | 54      |
+| rfb        | 0.200      | 0.770 | 250     |
+
+**by kpm**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| mk11-mod-0 | 0.207      | 0.784 | 54      |
+| rfb        | 0.200      | 0.770 | 250     |
+
+
+
+h3. Underslung Launchers
+
+**by accuracy**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| m320-he | 0.380      | 1.232 | 43      |
+
+**by kpm**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| m320-he | 0.380      | 1.232 | 43      |
+
+
+
+h3. PDWs
+
+**by accuracy**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| pp-2000 | 0.146      | 1.174 | 75      |
+| mx4     | 0.116      | 0.726 | 1863    |
+
+**by kpm**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| pp-2000 | 0.146      | 1.174 | 75      |
+| mx4     | 0.116      | 0.726 | 1863    |
+
+
+
+h3. Handguns
+
+**by accuracy**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| m9     | 0.199      | 0.999 | 71      |
+| p226   | 0.171      | 0.720 | 176     |
+
+**by kpm**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| m9     | 0.199      | 0.999 | 71      |
+| p226   | 0.171      | 0.720 | 176     |
+
+
+
+h3. Sniper Rifles
+
+**by accuracy**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| m40a5  | 0.294      | 0.736 | 252     |
+| cs-lr4 | 0.272      | 0.484 | 1428    |
+
+**by kpm**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| m40a5  | 0.294      | 0.736 | 252     |
+| cs-lr4 | 0.272      | 0.484 | 1428    |
+
+
+
+h3. LMGs
+
+**by accuracy**
+
+| *Name*      | *Accuracy* | *KPM* | *Count* |
+| u-100-mk5   | 0.112      | 0.782 | 998     |
+| type-88-lmg | 0.093      | 1.115 | 185     |
+
+**by kpm**
+
+| *Name*      | *Accuracy* | *KPM* | *Count* |
+| type-88-lmg | 0.093      | 1.115 | 185     |
+| u-100-mk5   | 0.112      | 0.782 | 998     |
+
+
+
+h3. Assault Rifles
+
+**by accuracy**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| scar-h | 0.130      | 1.277 | 877     |
+| ak-12  | 0.128      | 0.971 | 2627    |
+
+**by kpm**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| scar-h | 0.130      | 1.277 | 877     |
+| ak-12  | 0.128      | 0.971 | 2627    |
+
+
+
+h3. Gadgets Explosives
+
+**by accuracy**
+
+| *Name*        | *Accuracy* | *KPM* | *Count* |
+| xm25-airburst | 0.260      | 0.738 | 136     |
+| c4-explosive  | 0.228      | 0.833 | 12      |
+
+**by kpm**
+
+| *Name*        | *Accuracy* | *KPM* | *Count* |
+| c4-explosive  | 0.228      | 0.833 | 12      |
+| xm25-airburst | 0.260      | 0.738 | 136     |
+
+
+
+h3. Carbines
+
+**by accuracy**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| ak-5c  | 0.146      | 1.186 | 780     |
+| acw-r  | 0.134      | 1.396 | 433     |
+
+**by kpm**
+
+| *Name* | *Accuracy* | *KPM* | *Count* |
+| acw-r  | 0.134      | 1.396 | 433     |
+| ak-5c  | 0.146      | 1.186 | 780     |
+
+
+
+h3. Hand Grenades
+
+**by accuracy**
+
+| *Name*   | *Accuracy* | *KPM* | *Count* |
+| m67-frag | 0.270      | 0.450 | 1       |
+
+**by kpm**
+
+| *Name*   | *Accuracy* | *KPM* | *Count* |
+| m67-frag | 0.270      | 0.450 | 1       |
