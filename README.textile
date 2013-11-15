@@ -9,18 +9,20 @@ h3. Usage
 
 *Requirements:* nodejs, mongodb, npm
 
-For _Ubuntu 13.10_ just run: @sudo apt-get install mongodb-server nodejs npm@
+For _Ubuntu 13.10_ just run:
+@sudo apt-get install mongodb-server nodejs npm@
+@npm install@ to install required nodejs libs
 
 1. Login to "battlelog":http://battlelog.battlefield.com/bf4/ & update @load_stat.js@ with your *beaker.session.id* from cookies:
 
 _load_stat.js_
 @var SESSION_ID = 'change-me';@
 
-I use _Web Developer_ extension in Firefox to get it. I tried to automate this step but without any luck.
+_Right Click on the page -> View Page Info -> Security -> View Cookies_. I tried to automate this step but without any luck.
 
 2. Load weapon statistics from servers:
 
-@node load_stat.js@
+@nodejs load_stat.js@
 
 Press @Ctrl+C@ at the end of process to break db connection.
 
@@ -28,7 +30,7 @@ You can run it several times to load more data.
 
 3. Print results:
 
-@node print_results.js@
+@nodejs print_results.js@
 
 You can update _MIN_TIME_EQUIPPED_ value(in sec). By default it uses weapons that were used at least 60min.
 
