@@ -5,17 +5,13 @@ var request = require('request'),
     async = require('async');
 
 
-var SESSION_ID = 'change-me';
-var cookie_str = 'beaker.session.id=' + SESSION_ID;
-
 var defaultHeaders = {
     'Origin': 'http://battlelog.battlefield.com',
     'Referer': 'http://battlelog.battlefield.com/bf4/servers/pc/',
     'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36',
     'X-AjaxNavigation': '1',
     'X-Requested-With': 'XMLHttpRequest',
-    'Accept': '*/*',
-    'Cookie': cookie_str
+    'Accept': '*/*'
 };
 
 function loadServers(cb) {
