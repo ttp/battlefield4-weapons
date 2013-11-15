@@ -7,30 +7,21 @@ to mongodb for each player. Then @print_results.js@ calculates avg values for ea
 
 h3. Usage
 
-*Requirements:* nodejs, mongodb, npm
+*Requirements:* nodejs, npm, mongodb
 
-For _Ubuntu 13.10_ just run:
-@sudo apt-get install mongodb-server nodejs npm@
-@npm install@ to install required nodejs libs
+*Install Requirements*
 
-1. Login to "battlelog":http://battlelog.battlefield.com/bf4/ & update @load_stat.js@ with your *beaker.session.id* from cookies:
+bc. sudo apt-get install nodejs npm mongodb-server
+npm install # to install required nodejs libs
 
-_load_stat.js_
-@var SESSION_ID = 'change-me';@
+*Usage:*
 
-_Right Click on the page -> View Page Info -> Security -> View Cookies_. I tried to automate this step but without any luck.
+bc. nodejs load_stat.js # requires Ctrl+C at the end of process
+nodejs print_results.js
 
-2. Load weapon statistics from servers:
+*Additional info*
 
-@nodejs load_stat.js@
-
-Press @Ctrl+C@ at the end of process to break db connection.
-
-You can run it several times to load more data.
-
-3. Print results:
-
-@nodejs print_results.js@
+You can run @nodejs load_stat.js@ several times to load more data.
 
 You can update _MIN_TIME_EQUIPPED_ value(in sec). By default it uses weapons that were used at least 60min.
 
