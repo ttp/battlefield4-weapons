@@ -49,6 +49,8 @@ MongoClient.connect('mongodb://127.0.0.1:27017/bf4', function(err, db) {
     weapons.aggregate({
         $match: { timeEquipped: { $gte: MIN_TIME_EQUIPPED } }
     }, {
+        $sort: {category: -1}
+    }, {
         $group : {
             _id : { slug : "$slug", category : "$category" },
             accuracy : { $avg : "$accuracy" },
