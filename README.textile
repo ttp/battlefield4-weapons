@@ -28,60 +28,74 @@ You can update _MIN_TIME_EQUIPPED_ value(in sec). By default it uses weapons tha
 _print_results.js_
 @var MIN_TIME_EQUIPPED = 60 * 60;@
 
-h2. Example Statistic(real)
+h2. Example Statistic(real Nov 2013)
 
 * _KPM_ - kills per minute
 * _Count_ - number of records that were used to calculate average value
 
-h3. Special
-
-**by accuracy**
-
-| *Name*        | *Accuracy* | *KPM* | *Count* |
-| defibrillator | 0.280      | 0.852 | 1       |
-| bayonet       | 0.162      | 0.268 | 1       |
-| survival      | 0.162      | 0.268 | 1       |
-
-**by kpm**
-
-| *Name*        | *Accuracy* | *KPM* | *Count* |
-| defibrillator | 0.280      | 0.852 | 1       |
-| bayonet       | 0.162      | 0.268 | 1       |
-| survival      | 0.162      | 0.268 | 1       |
-
-
-
-h3. Rocket Launchers
-
-**by accuracy**
-
-| *Name*         | *Accuracy* | *KPM* | *Count* |
-| rpg-7v2        | 0.372      | 0.766 | 376     |
-| fim-92-stinger | 0.092      | 0.112 | 15      |
-
-**by kpm**
-
-| *Name*         | *Accuracy* | *KPM* | *Count* |
-| rpg-7v2        | 0.372      | 0.766 | 376     |
-| fim-92-stinger | 0.092      | 0.112 | 15      |
-
-
-
-h3. Shotguns
+h3. Assault Rifles
 
 **by accuracy**
 
 | *Name*   | *Accuracy* | *KPM* | *Count* |
-| m26-mass | 0.847      | 1.494 | 7       |
-| 870-mcs  | 0.686      | 1.336 | 51      |
-| qbs-09   | 0.668      | 1.070 | 100     |
+| cz-805   | 0.166      | 1.444 | 20      |
+| ace-23   | 0.158      | 1.700 | 122     |
+| m16a4    | 0.158      | 1.450 | 39      |
+| sar-21   | 0.157      | 1.093 | 147     |
+| aug-a3   | 0.156      | 1.316 | 68      |
+| qbz-95-1 | 0.149      | 0.878 | 21      |
+| famas    | 0.145      | 1.206 | 47      |
+| m416     | 0.141      | 1.180 | 529     |
+| aek-971  | 0.131      | 1.422 | 199     |
+| ak-12    | 0.131      | 0.837 | 919     |
+| scar-h   | 0.127      | 0.961 | 379     |
 
 **by kpm**
 
 | *Name*   | *Accuracy* | *KPM* | *Count* |
-| m26-mass | 0.847      | 1.494 | 7       |
-| 870-mcs  | 0.686      | 1.336 | 51      |
-| qbs-09   | 0.668      | 1.070 | 100     |
+| ace-23   | 0.158      | 1.700 | 122     |
+| m16a4    | 0.158      | 1.450 | 39      |
+| cz-805   | 0.166      | 1.444 | 20      |
+| aek-971  | 0.131      | 1.422 | 199     |
+| aug-a3   | 0.156      | 1.316 | 68      |
+| famas    | 0.145      | 1.206 | 47      |
+| m416     | 0.141      | 1.180 | 529     |
+| sar-21   | 0.157      | 1.093 | 147     |
+| scar-h   | 0.127      | 0.961 | 379     |
+| qbz-95-1 | 0.149      | 0.878 | 21      |
+| ak-12    | 0.131      | 0.837 | 919     |
+
+
+
+h3. Carbines
+
+**by accuracy**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| m4         | 0.160      | 1.244 | 25      |
+| g36c       | 0.160      | 1.097 | 48      |
+| ace-21-cqb | 0.155      | 1.319 | 28      |
+| aku-12     | 0.154      | 1.126 | 147     |
+| type-95b-1 | 0.150      | 1.013 | 7       |
+| ace-52-cqb | 0.145      | 1.329 | 117     |
+| ak-5c      | 0.143      | 0.891 | 642     |
+| a-91       | 0.137      | 1.142 | 39      |
+| sg553      | 0.137      | 1.019 | 132     |
+| acw-r      | 0.132      | 1.047 | 314     |
+
+**by kpm**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| ace-52-cqb | 0.145      | 1.329 | 117     |
+| ace-21-cqb | 0.155      | 1.319 | 28      |
+| m4         | 0.160      | 1.244 | 25      |
+| a-91       | 0.137      | 1.142 | 39      |
+| aku-12     | 0.154      | 1.126 | 147     |
+| g36c       | 0.160      | 1.097 | 48      |
+| acw-r      | 0.132      | 1.047 | 314     |
+| sg553      | 0.137      | 1.019 | 132     |
+| type-95b-1 | 0.150      | 1.013 | 7       |
+| ak-5c      | 0.143      | 0.891 | 642     |
 
 
 
@@ -90,108 +104,26 @@ h3. DMRs
 **by accuracy**
 
 | *Name*     | *Accuracy* | *KPM* | *Count* |
-| mk11-mod-0 | 0.207      | 0.784 | 54      |
-| rfb        | 0.200      | 0.770 | 250     |
+| m39-emr    | 0.255      | 1.080 | 10      |
+| scar-h-sv  | 0.231      | 1.372 | 7       |
+| svd-12     | 0.226      | 0.764 | 8       |
+| ace-53-sv  | 0.224      | 1.172 | 4       |
+| qbu-88     | 0.222      | 0.669 | 5       |
+| mk11-mod-0 | 0.205      | 0.925 | 72      |
+| sks        | 0.201      | 0.993 | 29      |
+| rfb        | 0.198      | 0.711 | 132     |
 
 **by kpm**
 
 | *Name*     | *Accuracy* | *KPM* | *Count* |
-| mk11-mod-0 | 0.207      | 0.784 | 54      |
-| rfb        | 0.200      | 0.770 | 250     |
-
-
-
-h3. Underslung Launchers
-
-**by accuracy**
-
-| *Name*  | *Accuracy* | *KPM* | *Count* |
-| m320-he | 0.380      | 1.232 | 43      |
-
-**by kpm**
-
-| *Name*  | *Accuracy* | *KPM* | *Count* |
-| m320-he | 0.380      | 1.232 | 43      |
-
-
-
-h3. PDWs
-
-**by accuracy**
-
-| *Name*  | *Accuracy* | *KPM* | *Count* |
-| pp-2000 | 0.146      | 1.174 | 75      |
-| mx4     | 0.116      | 0.726 | 1863    |
-
-**by kpm**
-
-| *Name*  | *Accuracy* | *KPM* | *Count* |
-| pp-2000 | 0.146      | 1.174 | 75      |
-| mx4     | 0.116      | 0.726 | 1863    |
-
-
-
-h3. Handguns
-
-**by accuracy**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| m9     | 0.199      | 0.999 | 71      |
-| p226   | 0.171      | 0.720 | 176     |
-
-**by kpm**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| m9     | 0.199      | 0.999 | 71      |
-| p226   | 0.171      | 0.720 | 176     |
-
-
-
-h3. Sniper Rifles
-
-**by accuracy**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| m40a5  | 0.294      | 0.736 | 252     |
-| cs-lr4 | 0.272      | 0.484 | 1428    |
-
-**by kpm**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| m40a5  | 0.294      | 0.736 | 252     |
-| cs-lr4 | 0.272      | 0.484 | 1428    |
-
-
-
-h3. LMGs
-
-**by accuracy**
-
-| *Name*      | *Accuracy* | *KPM* | *Count* |
-| u-100-mk5   | 0.112      | 0.782 | 998     |
-| type-88-lmg | 0.093      | 1.115 | 185     |
-
-**by kpm**
-
-| *Name*      | *Accuracy* | *KPM* | *Count* |
-| type-88-lmg | 0.093      | 1.115 | 185     |
-| u-100-mk5   | 0.112      | 0.782 | 998     |
-
-
-
-h3. Assault Rifles
-
-**by accuracy**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| scar-h | 0.130      | 1.277 | 877     |
-| ak-12  | 0.128      | 0.971 | 2627    |
-
-**by kpm**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| scar-h | 0.130      | 1.277 | 877     |
-| ak-12  | 0.128      | 0.971 | 2627    |
+| scar-h-sv  | 0.231      | 1.372 | 7       |
+| ace-53-sv  | 0.224      | 1.172 | 4       |
+| m39-emr    | 0.255      | 1.080 | 10      |
+| sks        | 0.201      | 0.993 | 29      |
+| mk11-mod-0 | 0.205      | 0.925 | 72      |
+| svd-12     | 0.226      | 0.764 | 8       |
+| rfb        | 0.198      | 0.711 | 132     |
+| qbu-88     | 0.222      | 0.669 | 5       |
 
 
 
@@ -200,30 +132,20 @@ h3. Gadgets Explosives
 **by accuracy**
 
 | *Name*        | *Accuracy* | *KPM* | *Count* |
-| xm25-airburst | 0.260      | 0.738 | 136     |
-| c4-explosive  | 0.228      | 0.833 | 12      |
+| m32-mgl       | 0.588      | 2.358 | 1       |
+| xm25-airburst | 0.268      | 0.855 | 40      |
+| c4-explosive  | 0.238      | 1.310 | 11      |
+| m15-at-mine   | 0.059      | 0.629 | 2       |
+| m224-mortar   | 0.000      | 0.000 | 2       |
 
 **by kpm**
 
 | *Name*        | *Accuracy* | *KPM* | *Count* |
-| c4-explosive  | 0.228      | 0.833 | 12      |
-| xm25-airburst | 0.260      | 0.738 | 136     |
-
-
-
-h3. Carbines
-
-**by accuracy**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| ak-5c  | 0.146      | 1.186 | 780     |
-| acw-r  | 0.134      | 1.396 | 433     |
-
-**by kpm**
-
-| *Name* | *Accuracy* | *KPM* | *Count* |
-| acw-r  | 0.134      | 1.396 | 433     |
-| ak-5c  | 0.146      | 1.186 | 780     |
+| m32-mgl       | 0.588      | 2.358 | 1       |
+| c4-explosive  | 0.238      | 1.310 | 11      |
+| xm25-airburst | 0.268      | 0.855 | 40      |
+| m15-at-mine   | 0.059      | 0.629 | 2       |
+| m224-mortar   | 0.000      | 0.000 | 2       |
 
 
 
@@ -232,9 +154,230 @@ h3. Hand Grenades
 **by accuracy**
 
 | *Name*   | *Accuracy* | *KPM* | *Count* |
-| m67-frag | 0.270      | 0.450 | 1       |
+| v40-mini | 0.338      | 2.726 | 4       |
 
 **by kpm**
 
 | *Name*   | *Accuracy* | *KPM* | *Count* |
-| m67-frag | 0.270      | 0.450 | 1       |
+| v40-mini | 0.338      | 2.726 | 4       |
+
+
+
+h3. Handguns
+
+**by accuracy**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| 44-magnum  | 0.314      | 1.032 | 5       |
+| cz-75      | 0.261      | 1.280 | 3       |
+| m412-rex   | 0.252      | 0.716 | 33      |
+| compact-45 | 0.245      | 1.362 | 5       |
+| m1911      | 0.242      | 1.630 | 12      |
+| fn57       | 0.233      | 1.166 | 3       |
+| qsz-92     | 0.221      | 0.836 | 8       |
+| m9         | 0.210      | 1.215 | 59      |
+| mp443      | 0.206      | 1.477 | 13      |
+| p226       | 0.198      | 1.104 | 205     |
+| 93r        | 0.181      | 1.606 | 3       |
+| g18        | 0.126      | 1.310 | 8       |
+
+**by kpm**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| m1911      | 0.242      | 1.630 | 12      |
+| 93r        | 0.181      | 1.606 | 3       |
+| mp443      | 0.206      | 1.477 | 13      |
+| compact-45 | 0.245      | 1.362 | 5       |
+| g18        | 0.126      | 1.310 | 8       |
+| cz-75      | 0.261      | 1.280 | 3       |
+| m9         | 0.210      | 1.215 | 59      |
+| fn57       | 0.233      | 1.166 | 3       |
+| p226       | 0.198      | 1.104 | 205     |
+| 44-magnum  | 0.314      | 1.032 | 5       |
+| qsz-92     | 0.221      | 0.836 | 8       |
+| m412-rex   | 0.252      | 0.716 | 33      |
+
+
+
+h3. LMGs
+
+**by accuracy**
+
+| *Name*       | *Accuracy* | *KPM* | *Count* |
+| rpk-12       | 0.120      | 1.001 | 20      |
+| qbb-95-1     | 0.115      | 1.076 | 31      |
+| u-100-mk5    | 0.108      | 0.683 | 365     |
+| lsat         | 0.100      | 0.945 | 99      |
+| m240b        | 0.099      | 1.129 | 36      |
+| mg4          | 0.093      | 1.175 | 34      |
+| pkp-pecheneg | 0.092      | 1.241 | 67      |
+| m249         | 0.089      | 1.141 | 154     |
+| type-88-lmg  | 0.084      | 0.849 | 152     |
+
+**by kpm**
+
+| *Name*       | *Accuracy* | *KPM* | *Count* |
+| pkp-pecheneg | 0.092      | 1.241 | 67      |
+| mg4          | 0.093      | 1.175 | 34      |
+| m249         | 0.089      | 1.141 | 154     |
+| m240b        | 0.099      | 1.129 | 36      |
+| qbb-95-1     | 0.115      | 1.076 | 31      |
+| rpk-12       | 0.120      | 1.001 | 20      |
+| lsat         | 0.100      | 0.945 | 99      |
+| type-88-lmg  | 0.084      | 0.849 | 152     |
+| u-100-mk5    | 0.108      | 0.683 | 365     |
+
+
+
+h3. PDWs
+
+**by accuracy**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| ump-9   | 0.160      | 1.566 | 3       |
+| cbj-ms  | 0.151      | 0.833 | 11      |
+| pdw-r   | 0.150      | 1.052 | 14      |
+| ump-45  | 0.143      | 1.043 | 61      |
+| cz-3a1  | 0.142      | 1.236 | 16      |
+| pp-2000 | 0.141      | 0.887 | 72      |
+| js2     | 0.139      | 0.924 | 5       |
+| p90     | 0.122      | 0.959 | 45      |
+| mx4     | 0.112      | 0.596 | 393     |
+
+**by kpm**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| ump-9   | 0.160      | 1.566 | 3       |
+| cz-3a1  | 0.142      | 1.236 | 16      |
+| pdw-r   | 0.150      | 1.052 | 14      |
+| ump-45  | 0.143      | 1.043 | 61      |
+| p90     | 0.122      | 0.959 | 45      |
+| js2     | 0.139      | 0.924 | 5       |
+| pp-2000 | 0.141      | 0.887 | 72      |
+| cbj-ms  | 0.151      | 0.833 | 11      |
+| mx4     | 0.112      | 0.596 | 393     |
+
+
+
+h3. Rocket Launchers
+
+**by accuracy**
+
+| *Name*          | *Accuracy* | *KPM* | *Count* |
+| rpg-7v2         | 0.316      | 0.787 | 64      |
+| mk153-smaw      | 0.315      | 0.649 | 8       |
+| fgm-172-sraw    | 0.310      | 0.784 | 31      |
+| fgm-148-javelin | 0.285      | 0.504 | 2       |
+| mbt-law         | 0.285      | 0.435 | 38      |
+| sa-18-igla      | 0.148      | 0.332 | 5       |
+| fim-92-stinger  | 0.140      | 0.277 | 17      |
+
+**by kpm**
+
+| *Name*          | *Accuracy* | *KPM* | *Count* |
+| rpg-7v2         | 0.316      | 0.787 | 64      |
+| fgm-172-sraw    | 0.310      | 0.784 | 31      |
+| mk153-smaw      | 0.315      | 0.649 | 8       |
+| fgm-148-javelin | 0.285      | 0.504 | 2       |
+| mbt-law         | 0.285      | 0.435 | 38      |
+| sa-18-igla      | 0.148      | 0.332 | 5       |
+| fim-92-stinger  | 0.140      | 0.277 | 17      |
+
+
+
+h3. Shotguns
+
+**by accuracy**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| m26-mass   | 1.137      | 1.855 | 1       |
+| hawk-12g   | 0.941      | 1.330 | 5       |
+| 870-mcs    | 0.798      | 1.191 | 48      |
+| shorty-12g | 0.743      | 1.458 | 11      |
+| uts-15     | 0.743      | 2.568 | 3       |
+| spas-12    | 0.721      | 1.063 | 5       |
+| dbv-12     | 0.652      | 1.378 | 4       |
+| saiga-12k  | 0.629      | 1.355 | 8       |
+| qbs-09     | 0.613      | 1.042 | 63      |
+| m1014      | 0.542      | 1.156 | 22      |
+
+**by kpm**
+
+| *Name*     | *Accuracy* | *KPM* | *Count* |
+| uts-15     | 0.743      | 2.568 | 3       |
+| m26-mass   | 1.137      | 1.855 | 1       |
+| shorty-12g | 0.743      | 1.458 | 11      |
+| dbv-12     | 0.652      | 1.378 | 4       |
+| saiga-12k  | 0.629      | 1.355 | 8       |
+| hawk-12g   | 0.941      | 1.330 | 5       |
+| 870-mcs    | 0.798      | 1.191 | 48      |
+| m1014      | 0.542      | 1.156 | 22      |
+| spas-12    | 0.721      | 1.063 | 5       |
+| qbs-09     | 0.613      | 1.042 | 63      |
+
+
+
+h3. Sniper Rifles
+
+**by accuracy**
+
+| *Name*      | *Accuracy* | *KPM* | *Count* |
+| amr-2       | 0.447      | 0.452 | 1       |
+| amr-2-mid   | 0.404      | 1.760 | 1       |
+| m98b        | 0.343      | 0.842 | 56      |
+| srr-61      | 0.333      | 0.949 | 112     |
+| 338-recon   | 0.329      | 0.771 | 56      |
+| sv-98       | 0.324      | 0.687 | 48      |
+| scout-elite | 0.321      | 0.548 | 77      |
+| jng-90      | 0.307      | 0.658 | 92      |
+| m40a5       | 0.293      | 0.686 | 408     |
+| fy-js       | 0.280      | 0.581 | 6       |
+| m82a3-cqb   | 0.274      | 1.579 | 2       |
+| cs-lr4      | 0.266      | 0.502 | 615     |
+| m82a3-mid   | 0.231      | 0.648 | 3       |
+
+**by kpm**
+
+| *Name*      | *Accuracy* | *KPM* | *Count* |
+| amr-2-mid   | 0.404      | 1.760 | 1       |
+| m82a3-cqb   | 0.274      | 1.579 | 2       |
+| srr-61      | 0.333      | 0.949 | 112     |
+| m98b        | 0.343      | 0.842 | 56      |
+| 338-recon   | 0.329      | 0.771 | 56      |
+| sv-98       | 0.324      | 0.687 | 48      |
+| m40a5       | 0.293      | 0.686 | 408     |
+| jng-90      | 0.307      | 0.658 | 92      |
+| m82a3-mid   | 0.231      | 0.648 | 3       |
+| fy-js       | 0.280      | 0.581 | 6       |
+| scout-elite | 0.321      | 0.548 | 77      |
+| cs-lr4      | 0.266      | 0.502 | 615     |
+| amr-2       | 0.447      | 0.452 | 1       |
+
+
+
+h3. Special
+
+**by accuracy**
+
+| *Name*        | *Accuracy* | *KPM* | *Count* |
+| defibrillator | 0.001      | 0.007 | 11      |
+
+**by kpm**
+
+| *Name*        | *Accuracy* | *KPM* | *Count* |
+| defibrillator | 0.001      | 0.007 | 11      |
+
+
+
+h3. Underslung Launchers
+
+**by accuracy**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| m320-he | 0.388      | 1.041 | 49      |
+
+**by kpm**
+
+| *Name*  | *Accuracy* | *KPM* | *Count* |
+| m320-he | 0.388      | 1.041 | 49      |
+
