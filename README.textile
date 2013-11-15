@@ -1,15 +1,22 @@
 h1. Battlefield4 weapons statistic
 
-Allows you to choose best weapon according to real game statistic.
+Allows you to choose best weapon according to real game statistic. I prefer KPM to accuracy.
+
+Actually @load_stat.js@ visits online game servers, gets list of players from this servers and store weapons stat
+to mongodb for each player. Then @print_results.js@ calculates avg values for each weapon and print results.
 
 h3. Usage
 
-Requires node.js & mongodb to start.
+*Requirements:* nodejs, mongodb, npm
 
-1. Login to battlelog & update @load_stat.js@ with your *beaker.session.id* from cookies:
+For _Ubuntu 13.10_ just run: @sudo apt-get install mongodb-server nodejs npm@
+
+1. Login to "battlelog":http://battlelog.battlefield.com/bf4/ & update @load_stat.js@ with your *beaker.session.id* from cookies:
 
 _load_stat.js_
 @var SESSION_ID = 'change-me';@
+
+I use _Web Developer_ extension in Firefox to get it. I tried to automate this step but without any luck.
 
 2. Load weapon statistics from servers:
 
