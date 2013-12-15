@@ -28,7 +28,7 @@ You can update _MIN_TIME_EQUIPPED_ value(in sec). By default it uses weapons tha
 _print_results.js_
 @var MIN_TIME_EQUIPPED = 60 * 60;@
 
-h2. Example Statistic(real Nov 2013)
+h2. Example Statistic(real Dec 2013)
 
 * _KPM_ - kills per minute
 * _Count_ - number of records that were used to calculate average value
