@@ -84,7 +84,7 @@ MongoClient.connect('mongodb://127.0.0.1:27017/bf4', function(err, db) {
             }
         ], function (err) {
            if (err) console.warn(err.message);
-           console.log('added weapons stat for ' + player.personaId);
+           console.log('added weapons stat for ' + player.personaId + ' (' + player_info_queue.length() + ')' );
            callback();
         });
     }, 10);
